@@ -1,0 +1,80 @@
+// $Rev: 106 $
+// $Date: 2016-07-15 11:29:14 -0700 (Fri, 15 Jul 2016) $
+// $LastChangedBy: jlperla $
+
+#include s2gcolor
+
+// white 
+color graph             	 white
+color graphregion            white
+color background             white
+color plotregion             white
+color matrix_plotregion      white
+color legend                 white
+color textbox                white
+color bylabel_outline        white
+
+
+* linewidth p#         thick
+* linewidth p#solid    thick
+linewidth p         thick
+
+* Line plots 
+linepattern p1lineplot  solid
+linepattern p2lineplot  dash
+linepattern p3lineplot  vshortdash
+linepattern p4lineplot  longdash
+linepattern p5lineplot  longdash_dot
+linepattern p2lineplot  dash
+
+* Horizontal labels for the y-axis
+anglestyle vertical_tick horizontal
+
+* Axes and ticks
+color axisline gs4
+linewidth axisline vthin
+color tick gs4
+color minortick gs4
+
+* Legend
+color legend_line        background
+numstyle legend_cols     1
+
+
+* For the matrix plot (?)
+color foreground gs10
+
+* --- Specific plots ---
+
+* Histograms
+color histogram_line white
+* color histogram gs9
+ticksetstyle major_vert_nolabel
+
+* Boxplots
+intensity box inten20
+
+* Matrix plots
+symbol matrix                smcircle_hollow
+color matrixmarkline         gs2
+color mat_label_box          background
+color matplotregion_line     gs10
+
+* Marker symbols
+symbol p      circle_hollow
+symbol p1     circle_hollow
+symbol p2     diamond_hollow
+symbol p3     square_hollow
+symbol p4     plus
+symbol p5     circle
+symbol p6     diamond
+symbol p7     square
+symbol p8     x
+symbol p9     triangle_hollow
+symbol p10    triangle
+symbol p11    smcircle
+symbol p12    smdiamond_hollow
+symbol p13    smsquare
+symbol p14    smtriangle_hollow
+symbol p15    smx
+
